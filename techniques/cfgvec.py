@@ -38,7 +38,7 @@ def flow_graph_ghidra(binary_path) -> nx.DiGraph:
             program = api.getCurrentProgram()
             block_model = ghidra.program.model.block.SimpleBlockModel(program)
 
-            # 先转为 list 避免迭代器复用出错
+
             blocks = block_model.getCodeBlocks(api.getMonitor())
             for block in blocks:
                 start_addr = int(block.getFirstStartAddress().getOffset())
