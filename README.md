@@ -15,6 +15,7 @@
 2. Add Python to the PATH during installation.
 3. Download and install [Git](https://www.git-scm.com/downloads).
 4. Add Git to the PATH during installation.
+5. pip install requirements.txt
 
 
 #### Ghidra Prerequisites
